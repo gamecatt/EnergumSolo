@@ -1,0 +1,149 @@
+/* Basic components */
+* {
+    transition: 0.5s transform;
+}
+
+body {
+    overflow-x: clip;
+}
+
+.container {
+    width: 100%;
+    padding: 126px 130px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.row,
+.col {
+    padding: 24px 0px;
+}
+
+.row {
+    width: 100%;
+    max-width: 1440px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.col.whyus {
+    width: 300px;
+    align-items: flex-start;
+}
+
+/* Ui desctop */
+button,
+.btn {
+    text-transform: uppercase;
+    color: #fff;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 120%;
+    min-width: 44px;
+    min-height: 44px;
+    background-color: #ffffff00;
+    border: 2px solid #F96E27;
+    border-radius: 6px;
+    transition: 0.5s;
+}
+
+button:hover,
+.btn:hover {
+    box-shadow: -2px -1px 7px 0px #F9862757;
+    box-shadow: -2px 5px 24px 0px #F96E27;
+}
+
+button:hover p,
+.btn:hover p {
+    color: var(--primary-color);
+}
+
+.btn:active{
+    background: #cb5b23;
+    border-color: #cb5b23;
+}
+
+button:active {
+    background: linear-gradient(94.82deg, rgba(249, 102, 39, 0.2) -1.63%, rgba(249, 140, 39, 0.2) 104.48%);
+}
+
+.btn-play {
+    transition: 0.5s box-shadow;
+}
+
+.btn-play:hover {
+    box-shadow: -2px -1px 7px 0px #F9862757;
+    box-shadow: -2px 5px 24px 0px #F96E27;
+}
+
+.btn-primary {
+    background-color: #F96E27;
+    color: #fff;
+    padding: 0 20px;
+}
+
+.btn-primary:hover>p {
+    color: #fff;
+}
+
+.btn-disabled {
+    background-color: #F6DBC3;
+}
+
+.btn-gradient {
+    position: relative;
+    border: 2px solid transparent;
+    border-radius: 6px;
+}
+
+.btn-gradient::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #ffcc64, #fd5f70) border-box;
+    border: inherit;
+    border-radius: inherit;
+    
+    mask: linear-gradient(white, white) padding-box,
+    linear-gradient(white, white);
+    mask-composite: clear;
+
+    -webkit-mask: linear-gradient(white, white) padding-box,
+        linear-gradient(white, white);
+    -webkit-mask-composite: clear;
+}
+
+button .btn-icon {
+    display: inline;
+    width: fit-content;
+    height: fit-content;
+}
+
+.main-btn-icon {
+    margin-left: 5px;
+    display: inline;
+    width: fit-content;
+    height: fit-content;
+}

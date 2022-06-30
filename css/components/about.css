@@ -1,0 +1,40 @@
+
+#about {
+  background-image: url(../../img/desktop/fone2.png);
+}
+#about .row{
+  align-items: flex-start;
+}
+.icon.whyus {
+  width: 45px;
+  height: 45px;
+}
+
+h5.whyus {
+  color: #000021;
+  font-weight: 500;
+  font-size: 46px;
+  line-height: 51px;
+}
+
+h5.whyus span {
+  color: #F96E27;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 51px;
+}
+
+h2.whyus {
+  margin: 24px 0px;
+  color: #000021;
+  font-size: 30px;
+  line-height: 33px;
+  letter-spacing: -1%;
+}
+
+p.whyus {
+  margin: 0px;
+  color: #000021;
+  font-size: 16px;
+  line-height: 24px;
+}

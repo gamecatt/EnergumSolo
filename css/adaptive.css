@@ -1,0 +1,465 @@
+/*Mobile devices (small and medium phones, 0px - 600px) */
+@media only screen and (max-width: 600px) {
+
+  h5,
+  h5 span,
+  h1,
+  h1 span {
+    font-size: 30px !important;
+  }
+
+  .header-title {
+    font-size: 35px;
+    line-height: 40px;
+    text-indent: -42px;
+    padding-left: 15px;
+    letter-spacing: 0.05em;
+    margin-left: 50px;
+  }
+
+  #header .navigation{
+    height: 75px;
+    padding: 15px 0px;
+  }
+  #header .navigation.fixed{
+    padding-inline: 32px;
+  }
+  .mobile-menu{
+    height: calc(100vh - 75px);
+  }
+
+  #header .logo{
+    width: 50%;
+  }
+  #header .logo>svg {
+    width: 100%;
+  }
+  
+  .navbar {
+    display: none;
+  }
+  
+  .action-language>.dropdown-lang {
+    top: 16px;
+  }
+
+  .action-language {
+    display: none;
+  }
+
+  .action-profile-title {
+    display: none;
+  }
+
+  button .btn-icon {
+    width: 12px;
+  }
+
+  .action-mobile-menu span,
+  .action-mobile-menu span::after,
+  .action-mobile-menu span::before {
+    width: 18px;
+    height: 1px;
+  }
+
+  .action-mobile-menu span {
+    left: 4px;
+  }
+
+  .action-mobile-menu span::after {
+    transform: translateY(5px);
+  }
+
+  .action-mobile-menu span::before {
+    transform: translateY(-5px);
+  }
+
+  .action-mobile-menu.hide {
+    display: initial;
+  }
+
+  #header-actions > *{
+    margin: 0 4px;
+  }
+
+  #header-actions .action-mobile-menu{
+    margin-right: 0;
+  }
+  
+  #header-actions button{
+    min-height: 30px;
+    min-width: 30px;
+  }
+  #speedometer .col{
+    width: 100%;
+  }
+
+  .media-item {
+    width: 308px;
+  }
+
+  .slider-more-btn {
+    width: 165px;
+  }
+  #prices .row {
+    flex-direction: column-reverse;
+  }
+
+  #contact {
+    background-image: url("../img/desktop/map.png");
+    background-size: cover;
+    background-position-x: -360px;
+  }
+
+  .map {
+    opacity: 0;
+  }
+
+  .card {
+    right: initial !important;
+    width: 310px;
+    height: 250px;
+  }
+
+  .container-active .card {
+    width: 310px;
+    padding: 35px 16px 16px 16px;
+  }
+
+  .popup-form label {
+    font-size: 13px;
+  }
+
+  .card>h3 {
+    font-size: 0.8em;
+    line-height: 20px;
+  }
+
+  .card>.paragraph {
+    font-size: 0.7em;
+  }
+
+  .card>.paragraph {
+    font-size: 0.7em;
+  }
+
+  .card button {
+    width: 150px;
+    margin-top: 0px;
+  }
+
+  .container {
+    padding: 26px 30px;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .row.reverse {
+    flex-direction: column-reverse;
+  }
+
+  .action-language {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  col.whyus{
+    width: 100%;
+  }
+
+  .slider-nav{
+    align-self: center;
+  }
+
+  #services .service-row{
+    text-align: center;
+  }
+
+  #footer{
+    padding-block-start: 15%;
+  }
+
+  #footer .decor svg#lines{
+    top: -35vw;
+    width: 70%;
+    bottom: auto;
+  }
+
+  #footer .decor svg#blur{
+    position: absolute;
+    width: 70%;
+    left: 0%;
+    bottom: 0vw;
+    top: auto;
+}
+
+  footer .sub-menu {
+    justify-content: center !important;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  footer .sub-menu ul:first-child {
+    margin-right: 0;
+  }
+  
+  footer .col {
+    text-align: center;
+  }
+
+  footer .row:last-child .col{
+    padding-block: 0px;
+  }
+
+  footer .logo {
+    transform: scale(1);
+  }
+
+  .col {
+    align-items: center !important;
+  }
+
+  h5.whyus, h2.whyus, p.whyus{
+    text-align: center;
+  }
+  #prices .row{
+    flex-direction: column-reverse;
+  }
+  #prices .decor {
+    display: none;
+  }
+  #prices p.whyus{
+    font-size: 0.8em;
+    line-height: 18px;
+  }
+  #prices h5.whyus, #prices h5.whyus span{
+    font-size: 0.8em;
+    line-height: 34px;
+  }
+  #about .row{
+    align-items: center;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px - 768px) */
+@media only screen and (min-width: 601px) {
+
+  @media only screen and (max-width: 991px) {
+    #speedometer{
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+    #speedometer .col{
+      width: 50%;
+    }
+    .col.whyus{
+      width: 100%;
+    }
+  }
+
+  .header-title {
+    font-size: 50px;
+  }
+
+  #header .navigation {
+    font-size: 0.6em;
+    height: 106px;
+    padding: 24px 0px;
+  }
+
+  #header .navigation.fixed{
+    padding-inline: 64px;
+  }
+  
+  #main-menu .menu-item {
+    padding: 0 8px;
+  }
+
+  #header-actions > * {
+    margin: 0 10px;
+  }
+  
+  #header-actions > .action-mobile-menu {
+    margin-right: 0;
+  }
+
+  .container{
+    padding: 26px 64px;
+  }
+
+  .navbar {
+    display: none;
+  }
+  
+  .action-profile-title {
+    display: none;
+  }
+  
+  .action-language {
+    display: none;
+  }
+  
+  .action-mobile-menu.hide {
+    display: initial;
+  }
+  
+  div#services .col{
+    padding-inline: 0px;
+  }
+
+  div#services .service-row .col{
+    padding-inline: 64px;
+    align-items: flex-start;
+  }
+
+  #prices .col{
+    align-items: flex-start;
+  }
+  
+  .row {
+    flex-direction: column;
+  }
+
+  .row.reverse {
+    flex-direction: column-reverse;
+  }
+
+  footer .row {
+    padding-inline: 64px;
+  }
+}
+
+
+
+/* Medium devices (landscape tablets, 768px - 992px) */
+@media only screen and (min-width: 768px) {
+  footer .row:last-child .col:first-child{
+    align-items: flex-start;
+    flex-direction: row;
+  }
+  
+  footer .row:last-child .col:last-child{
+    align-items: flex-end;
+  }
+
+  .row {
+    flex-direction: row;
+  }
+
+  .row.reverse {
+    flex-direction: initial;
+  }
+
+  .header-title {
+    display: initial;
+  }
+
+  .speedometer-item {
+    width: 150px;
+    padding: 30px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px - 1200px) */
+@media only screen and (min-width: 992px) {
+  .navbar {
+    display: flex;
+  }
+
+  #header .logo{
+    width: 20%;
+  }
+
+  #header .logo>svg{
+    width: 100%;
+  }
+
+  .navbar{
+    width: 60%;
+  }
+
+  #header-actions{
+    width: 20%;
+  }
+
+  .action-mobile-menu.hide {
+    display: none;
+  }
+
+  .action-language {
+    display: flex;
+  }
+  
+  #header-actions > .action-profile {
+    margin-right: 0;
+  }
+
+  .speedometer-item {
+    width: 200px;
+    padding: 44px;
+  }
+
+  svg.speedometer-svg {
+    width: 200px;
+  }
+
+  #mobile {
+    display: none !important;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and) */
+@media only screen and (min-width: 1200px) {
+  #header-actions{
+    width: 25%;
+  }
+
+  #main-menu .menu-item {
+    padding: 0 10px;
+    margin: 0;
+  }
+  
+  .action-profile-title {
+    display: inline;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  
+    .navigation {
+      padding: 24px 0px;
+    }
+  
+  #header .navigation.fixed{
+    padding-inline: 128px;
+  }
+
+  .container {
+    padding: 128px 128px;
+  }
+  
+  .action-profile .btn-gradient {
+    padding: 0 10px;
+  }
+
+  #header .logo{
+    width: 20%;
+  }
+
+  #header .logo>svg{
+      width: 249px;
+  }
+  
+  .navbar{
+    width: 50%;
+  }
+
+  footer .row {
+    padding-inline: 128px;
+  }
+
+}

@@ -1,0 +1,67 @@
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #130e2f;
+  z-index: 50;
+  transition: 1s;
+  opacity: 1;
+}
+
+#preloader.close {
+  opacity: 0;
+}
+
+#preloader>svg {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: calc(50vh - 50px);
+  left: calc(50vw - 50px);
+}
+
+#preloader>svg.preloader-core {
+  top: calc(50vh - 55px);
+  left: calc(50vw - 55px);
+  width: 110px;
+  height: 110px;
+}
+
+#preloader>svg.circle-out {
+  top: calc(50vh - 60px);
+  left: calc(50vw - 60px);
+  width: 120px;
+  height: 120px;
+}
+
+#preloader>svg.circle-in {
+  top: calc(50vh - 50px);
+  left: calc(50vw - 50px);
+  width: 100px;
+  height: 100px;
+}
+
+#preloader>svg.circle-out circle {
+  stroke-dasharray: 380;
+  stroke-dashoffset: -380;
+  stroke-width: 10px;
+  stroke: #f96d27;
+  fill: none;
+  transition: 2s;
+}
+
+#preloader>svg.circle-in circle {
+  stroke-dasharray: 370;
+  stroke-dashoffset: 370;
+  stroke-width: 40px;
+  stroke: #f96d27;
+  fill: none;
+  transition: 2s;
+}
+
+#preloader>svg.circle-in circle.loaded,
+#preloader>svg.circle-out circle.loaded {
+  stroke-dashoffset: 0;
+}

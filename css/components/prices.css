@@ -1,0 +1,154 @@
+#prices {
+  position: relative;
+  background-color: #e0e3e8;
+}
+
+#prices .decor {
+  position: absolute;
+  left: 0px;
+  top: -50%;
+  z-index: 0;
+  background-repeat: no-repeat;
+  background: radial-gradient(#f96e2720 0%, transparent 70%);
+  background-size: 450px;
+  background-position-x: right;
+}
+
+#prices .calc .bg{
+  background-repeat: no-repeat;
+  background: radial-gradient(#f96e2720 0%, transparent 70%);
+  background-position-x: center;
+}
+
+#prices .calc {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin-top: 250px;
+}
+
+#prices .object{
+  position: absolute;
+  right: 25%;
+  bottom: 100%;
+  width: 50%;
+}
+
+#prices > .row > .col > button.btn-primary{
+  padding: 0 50px;
+}
+
+#prices h5.whyus{
+  margin-bottom: 24px;
+}
+
+#prices p.whyus {
+  margin-bottom: 38px;
+}
+
+#prices .row{
+  z-index: 19;
+}
+
+.calc .bg{
+  position: absolute;
+  bottom: -10%;
+  width: 90%;
+}
+/* pup-up for prices section */
+
+.pop-up {
+  display: none;
+}
+
+.container-active {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.356);
+  z-index: 5;
+  justify-content: center;
+  align-items: center;
+}
+.container-active.hide {
+  display: none;
+}
+.container-active .card {
+  z-index: 10;
+  max-width: 700px;
+  max-height: 500px;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  position: relative;
+  justify-content: flex-start;
+  background: url(../../img/desktop/popup-bg.png) #f1f5fa;
+  padding-inline: 91px;
+  padding-top: 60px;
+}
+
+.card .popup-title {
+  font-size: 1.8em;
+}
+.form-text p {
+  font-size: 0.8em;
+}
+.popup-form label {
+  font-size: 0.7em;
+  line-height: 130%;
+}
+
+.popup-form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.popup-form .form-row {
+  display: flex;
+}
+
+.popup-form .form-col {
+  width: 100%;
+}
+
+.popup-form .form-col:first-child {
+  width: 100%;
+  padding-right: 10px;
+}
+
+.popup-form .form-col:last-child {
+  width: 100%;
+  padding-left: 10px;
+}
+
+.popup-form .field {
+  width: 100%;
+  height: 40px;
+  max-height: 48px;
+  margin-bottom: 3px;
+  border: #c0c0c0 1px solid;
+}
+
+.popup-form .field.message {
+  max-width: 100%;
+  max-height: 150px;
+  width: 100%;
+  height: 90px;
+  margin-bottom: 30px;
+}
+
+.popup-form .btn {
+  width: 50%;
+}
+
+.card-close {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: 10px;
+  top: 10px;
+}

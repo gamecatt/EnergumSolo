@@ -1,0 +1,230 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#header::before {
+  content: "";
+  width: 100%;
+  height: 90vh;
+  position: absolute;
+  background-color: #130e2f;
+  transition: 1s;
+}
+
+#header.bg-active::before {
+  opacity: 0;
+}
+
+#illustration {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  overflow-y: visible;
+  overflow-x: clip;
+}
+
+#illustration svg,
+#illustration img {
+  position: absolute;
+}
+
+#illustration svg#city,
+#illustration svg#flashes {
+  width: 41.6%;
+  right: 4.2%;
+  bottom: 0vw;
+}
+
+#illustration svg#wire {
+  width: 52.4%;
+  right: 2.8%;
+  bottom: 0vw;
+}
+
+#illustration svg#wire.spark {
+  transition: 20s linear;
+  stroke-dasharray: 10 1936;
+  stroke-dashoffset: -48;
+}
+
+#illustration svg#wire.spark.moved {
+  stroke-dasharray: 10 1936;
+  stroke-dashoffset: 1899;
+}
+
+#illustration svg.wire-btn.mobile {
+  display: none;
+  height: 75%;
+  right: 59.6%;
+  bottom: 0vw;
+}
+
+#illustration svg.wire-btn.mobile.spark {
+  display: none;
+}
+
+#illustration svg.wire-btn {
+  width: 24.6%;
+  right: 54.75%;
+  bottom: 0vw;
+}
+
+#illustration svg.wire-btn.spark {
+  transition: 2s;
+  stroke-dasharray: 10 320;
+  stroke-dashoffset: 10;
+}
+
+#illustration svg.wire-btn.spark.moved {
+  stroke-dasharray: 10 320;
+  stroke-dashoffset: 340;
+}
+
+#illustration svg.vishka {
+  width: 4.8%;
+  right: 50.6%;
+  bottom: 0vw;
+}
+
+#illustration .header-title {
+  position: absolute;
+  left: 6vw;
+  top: 10%;
+}
+
+#illustration .btn-play {
+  width: 14.65%;
+  right: 76.2%;
+  bottom: 2.5vw;
+}
+
+#illustration #moon {
+  width: 30%;
+  right: 5%;
+  bottom: 11.5vw;
+  filter: brightness(0.5) contrast(0.8);
+  transition: 1s;
+}
+
+#illustration #moon.active {
+  filter: brightness(1.1) contrast(1.1);
+}
+
+#illustration #city-backlight {
+  width: 52%;
+  /* height: 40vw; */
+  right: 0%;
+  bottom: 0vw;
+}
+
+#illustration #city-ground {
+  opacity: 0.2;
+  width: 41.6%;
+  right: 4.2%;
+  bottom: -12vw;
+}
+
+@media only screen and (max-width: 500px) {
+
+  #illustration svg#city,
+  #illustration svg#flashes,
+  #illustration #city-ground {
+    width: 73.5%;
+    right: 4.2%;
+    bottom: 0vw;
+  }
+
+  #illustration svg#wire,
+  #illustration #city-backlight {
+    width: 90.4%;
+    right: 2.8%;
+    bottom: 0vw;
+  }
+
+  #illustration svg#wire.spark {
+    transition: 20s linear;
+    stroke-dasharray: 10 1936;
+    stroke-dashoffset: -48;
+  }
+
+  #illustration svg#wire.spark.moved {
+    stroke-dasharray: 10 1936;
+    stroke-dashoffset: 1899;
+  }
+
+  #illustration svg.wire-btn.mobile {
+    display: block;
+    height: 60vw;
+    right: 84%;
+    bottom: 3vw;
+    width: 10%;
+  }
+
+  #illustration svg.wire-btn.mobile.spark {
+    display: block;
+  }
+
+  #illustration svg.wire-btn {
+    display: none;
+    width: 24.6%;
+    right: 54.75%;
+    bottom: 0vw;
+  }
+
+  #illustration svg.wire-btn.spark {
+    display: none;
+    transition: 2s;
+    stroke-dasharray: 10 320;
+    stroke-dashoffset: 10;
+  }
+
+  #illustration svg.vishka {
+    width: 7.8%;
+    right: 85.6%;
+    bottom: 0vw;
+  }
+
+  #illustration .header-title {
+    position: absolute;
+    left: 0vw;
+    top: 0%;
+    padding-left: 0;
+  }
+
+  #illustration .btn-play {
+    width: 24.65%;
+    right: 64.5%;
+    bottom: 59vw;
+  }
+
+  #illustration .btn-play #btn-play-rozetka {
+    transform: translateX(-70%);
+  }
+
+  #illustration .btn-play #btn-play-text {
+    transform: translateX(25%);
+  }
+
+  #illustration #moon {
+    width: 50%;
+    right: 7.3%;
+    bottom: 21.5vw;
+  }
+
+  #illustration #city-backlight {
+    bottom: 0vw;
+    width: 100%;
+    right: 0%;
+  }
+
+  #illustration #city-ground {
+    opacity: 0.2;
+    bottom: -23.5vw;
+  }
+
+}

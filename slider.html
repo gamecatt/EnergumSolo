@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container" id="media-container">
+        <h1 class="media-title uppercase">Медіацентр</h1>
+        <div class="media-slider">
+            <div class="slider-nav">
+                <span class="slide-id-first">01</span>
+                <span class="slider-indicator"></span>
+                <span class="slide-id-last">02</span>
+            </div>
+            
+            <div class="slider-content-wrapper">
+                <div class="slider-content" id="slider">
+                    <div class="media-item" slide-id="01">
+                        <img class="media-item-img" src="slides/img1.png">
+                        <p class="media-data uppercase">24 Грудня 2021</p>
+                        <div class="line"></div>
+                        <p class="media-description">Споживання природного газу виросло в 1,5 рази</p>
+                    </div>
+            
+                    <div class="media-item"  slide-id="02">
+                        <img class="media-item-img" src="slides/img2.png">
+                        <p class="media-data uppercase">24 Грудня 2021</p>
+                        <div class="line"></div>
+                        <p class="media-description">Споживання природного газу виросло в 1,5 рази</p>
+                    </div>
+                    
+                    <div class="media-item" slide-id="03">
+                        <img class="media-item-img" src="slides/img3.png">
+                        <p class="media-data uppercase">24 Грудня 2021</p>
+                        <div class="line"></div>
+                        <p class="media-description">Споживання природного газу виросло в 1,5 рази</p>
+                    </div>
+                    
+                    <div class="media-item" slide-id="04">
+                        <img class="media-item-img" src="slides/img1.png">
+                        <p class="media-data uppercase">24 Грудня 2021</p>
+                        <div class="line"></div>
+                        <p class="media-description">Споживання природного газу виросло в 1,5 рази</p>
+                    </div>
+            
+                    <div class="media-item" slide-id="05">
+                        <img class="media-item-img" src="slides/img2.png">
+                        <p class="media-data uppercase">24 Грудня 2021</p>
+                        <div class="line"></div>
+                        <p class="media-description">Споживання природного газу виросло в 1,5 рази</p>
+                    </div>
+                    
+                    <div class="media-item" slide-id="06">
+                        <img class="media-item-img" src="slides/img3.png">
+                        <p class="media-data uppercase">24 Грудня 2021</p>
+                        <div class="line"></div>
+                        <p class="media-description">Споживання природного газу виросло в 1,5 рази</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-buttons">
+                <button class="slider-more-btn uppercase">
+                    Більше новин
+                </button>
+                <div class="slider-navigation-btn">
+                    <a class="btn-prev" onclick="sliderPrev()"></a>
+                    <a class="btn-next" onclick="sliderNext()"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="slider.js"></script>
+</body>
+</html>

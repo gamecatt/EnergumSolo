@@ -1,0 +1,45 @@
+.action-menu {
+    display: none;
+}
+
+.burger-menu {
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    top: auto;
+    background-color: #ffffff;
+    left: 8px;
+    transition: 0.5s;
+}
+
+.burger-menu.closed {
+    height: 0px !important;
+}
+
+.burger-menu::before,
+span.burger-menu::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    left: 0;
+    background-color: #ffffff;
+}
+
+.burger-menu::after {
+    top: 5px;
+}
+
+.burger-menu::before {
+    top: -5px;
+}
+
+.burger-menu.closed::after {
+    transform: rotateZ(-45deg);
+    top: 0;
+}
+
+.burger-menu.closed::before {
+    transform: rotateZ(45deg);
+    top: 0;
+}
